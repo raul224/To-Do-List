@@ -1,0 +1,57 @@
+﻿@model WebAppToDoList.Models.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="app-container d-flex align-items-center justify-content-center flex-column">        
+    <h3>Todo App</h3>
+    <div class="d-flex align-items-center mb-3">
+        <form>
+            <div class="form-group mr-3 mb-0">
+                <input type="text"
+                       class="form-control"
+                       id="formGroupExampleInput"
+                       placeholder="Enter a task here" />
+            </div>
+            <button type="button"
+                    class="btn btn-primary mr-3">
+                Save
+            </button>
+        </form>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>item</th>
+                    <th>estado</th>
+                    <th>responsavel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td>
+                        <button class="btn btn-danger">
+                            Delete
+                        </button>
+                        <button class="btn btn-success">
+                            Finished
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
